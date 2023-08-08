@@ -1,0 +1,7 @@
+CREATE TABLE disciplina (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    curso VARCHAR(100) NOT NULL,
+    turma VARCHAR(100) NOT NULL,
+    local VARCHAR(100) NOT NULL
+);

@@ -23,8 +23,8 @@ input[type="submit"] {
 }
 
 /* Estilo para o campo de texto de nome */
-input[name="nome"] {
-  width: 100%;
+input {
+  width: 25%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;

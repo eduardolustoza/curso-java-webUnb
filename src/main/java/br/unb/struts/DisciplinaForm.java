@@ -1,6 +1,8 @@
-package br.unb.dominio;
+package br.unb.struts;
 
-public class Disciplina {
+import org.apache.struts.action.ActionForm;
+
+public class DisciplinaForm extends ActionForm {
 	private int id; // gerado pelo banco
 	private String nome; // nome da disciplina
 	private String curso; // nome do curso: civil, medicina, direito
@@ -21,14 +23,6 @@ public class Disciplina {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public Disciplina(String nome, String curso, String turma, String local) {
-		super();
-		this.nome = nome;
-		this.curso = curso;
-		this.turma = turma;
-		this.local = local;
 	}
 
 	public String getCurso() {
@@ -55,9 +49,4 @@ public class Disciplina {
 		this.local = local;
 	}
 
-	@Override
-	public String toString() {
-		return "Disciplina [id=" + id + ", nome=" + nome + ", curso=" + curso + ", turma=" + turma + ", local=" + local
-				+ "]";
-	}
 }
